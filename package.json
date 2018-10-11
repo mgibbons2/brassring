@@ -1,0 +1,19 @@
+{
+  "name": "brassring",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgibbons2/brassring.git"
+  },
+  "author": "Michael Gibbons",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mgibbons2/brassring/issues"
+  },
+  "homepage": "https://github.com/mgibbons2/brassring#readme"
+}
