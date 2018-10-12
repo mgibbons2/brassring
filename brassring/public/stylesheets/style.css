@@ -1,8 +1,36 @@
 body {
-  padding: 50px;
+  padding: 5vh;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("../images/folk-pattern-black.png");
 }
 
 a {
   color: #00B7FF;
+}
+.topcontainer{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
+  height: 40vh;
+}
+.top{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 2fr;
+  font-family: "copperplate-gothic";
+  font-weight: bold;
+  text-align: center;
+  background-color: black;
+  color: white;
+  line-height: 100%;
+  align-items: center;
+}
+.title{
+  font-size: 5vw;
+}
+.nav{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  text-align: center;
 }
