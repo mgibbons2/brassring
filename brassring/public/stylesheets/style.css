@@ -1,36 +1,96 @@
 body {
-  padding: 5vh;
+  margin: 0;
+  /*padding-top: 5vh;*/
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-image: url("../images/folk-pattern-black.png");
+  /*background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+  background-color: #121401;*/
 }
 
 a {
   color: #00B7FF;
 }
 .topcontainer{
+  position: sticky;
+  top: 0;
   display: grid;
   grid-template-columns: 1fr;
-  grid-auto-rows: 1fr;
-  height: 40vh;
+  grid-auto-rows: 1fr 5px .5fr 5px;
 }
 .top{
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 2fr;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr;
   font-family: "copperplate-gothic";
   font-weight: bold;
   text-align: center;
-  background-color: black;
-  color: white;
+  height: 20vh;
+  background-color: #ffc20e;
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
   line-height: 100%;
   align-items: center;
 }
+.logo{
+  display: grid;
+  grid-row: 1/3;
+  align-content: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  height: 100%;
+  width: 100%;
+}
+.logo > img {
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 165%;
+  margin: auto;
+  margin-left: 5px;
+  margin-top: 5px;
+}
 .title{
   font-size: 5vw;
+}
+.info{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 .nav{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   text-align: center;
+}
+.buffer{
+  height: 100%;
+  background-color: black;
+  z-index: -1;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+}
+.content{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+.content > img{
+  width: 100%;
+  z-index: -2;
+}
+.highlight{
+  background-color: white;
+  z-index: -3;
+  height: 5px;
+}
+.uppercontainer{
+  position: fixed;
+  left:0;
+  right:0;
+  top:0;
+}
+.topbuffer{
+  background-color: white;
+  z-index: -4;
+  height: 5px;
+  width: 100%;
 }
